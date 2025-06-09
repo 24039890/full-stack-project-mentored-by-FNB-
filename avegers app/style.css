@@ -1,0 +1,249 @@
+h1{
+color: green;
+font-family:sans-serif;
+}
+p{
+    font-family:fantasy;
+    color: coral;
+}
+ul {
+    list-style-image:url('image/images/pointer-icon.png');
+list-style-type: circle;
+}
+ol{
+list-style-type: upper-roman;
+}
+a{
+font-family : Helvetica, sans-serif;
+text-decoration : none;
+background-color: aquamarine;
+padding : 5px;
+}
+a:hover{
+background-color: aqua;
+color : #ffffff;
+}
+#menu{
+width:100%;
+height:40px;
+background-color: cornflowerblue;
+padding-top: 12px;
+}
+#menu nav{
+color:#ffffff;
+font-family: Helvetica, sans-serif;
+font-size: 18px;
+text-decoration:none;
+font-weight: 800px;
+padding-left: 20px;
+padding-right: 20px;
+}
+#menu nav:hover{
+color: #5077bd;
+}
+
+/* the code*/
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Navigation Styles with Animation */
+#menu {
+    background-color: #e62429; /* Avengers red */
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+#menu a:hover {
+    color: #ffd700; /* Gold */
+}
+
+#menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ffd700;
+    transition: width 0.3s ease;
+}
+
+#menu a:hover::after {
+    width: 100%;
+}
+
+/* Main Title Animation */
+#avengers {
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 80px;
+    color: #e62429;
+    text-shadow: 0 0 10px rgba(230, 36, 41, 0.7);
+    animation: 
+        fadeIn 1.5s ease-out,
+        pulse 2s infinite 1.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Avengers Grid Styles with Animations */
+.avangers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.avangers img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeInUp 0.8s forwards;
+}
+
+.avangers img:nth-child(1) { animation-delay: 0.2s; }
+.avangers img:nth-child(2) { animation-delay: 0.4s; }
+.avangers img:nth-child(3) { animation-delay: 0.6s; }
+.avangers img:nth-child(4) { animation-delay: 0.8s; }
+.avangers img:nth-child(5) { animation-delay: 1.0s; }
+.avangers img:nth-child(6) { animation-delay: 1.2s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.avangers img:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(230, 36, 41, 0.4);
+    z-index: 10;
+}
+
+/* Homepage Link Animation */
+.homepage {
+    display: inline-block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: #e62429;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    grid-column: 1 / -1;
+    text-align: center;
+    transition: all 0.3s ease;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.homepage:hover {
+    background-color: #ffd700;
+    color: #000;
+}
+
+/* Audio Player Visual Feedback */
+audio {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+audio:hover {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #avengers {
+        font-size: 3rem;
+    }
+    
+    #menu {
+        text-align: center;
+    }
+    
+    #menu a {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .avangers {
+        grid-template-columns: 1fr;
+    }
+}

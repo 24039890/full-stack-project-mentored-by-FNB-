@@ -1,0 +1,147 @@
+body{
+  padding:0;
+  margin:0;
+  font-family:Arial, Helvetica;
+  
+}
+#logo{
+position: fixed;
+top  : 0;
+left: 0;
+z-index : 500;
+width  :100%;
+height :80px;
+background-image:url('images/images/wood-bg.png');
+background-repeat: repeat-x;
+}
+#logo img{
+    display:block;
+    margin:auto;
+    height:70%;
+    padding-top: 15px;
+    
+}
+
+#tabs_top{
+    position:fixed;
+    top:80px;
+    left:0;
+    z-index:500;
+    width:100%;
+    height:40px;
+    background-color:darkgreen;
+
+}
+#tabs_top a{
+       float:left;
+       display:block;
+       width:33%;
+       height: 35px;
+       font-weight: 700;
+       color:white;
+       text-align: center;
+       text-decoration: none;
+       padding-top:12px;
+  
+}
+#map{
+   margin-top: 120px;
+}
+#tabs-buttom{
+    position:fixed;
+    bottom:0;
+    left:0;
+    z-index: 500;
+    width:100%;
+    height:40px;
+    background-color:forestgreen;
+
+}
+#tabs-buttom a{
+    float:left;
+    display:block;
+    width:50%;
+    height:35px;
+    font-weight: 700;
+    color:white;
+    text-decoration:none;
+    padding-top:none;
+    text-align:center;
+}
+#main{
+    margin-top:119px;
+    background-image:url('images/images/map-blur.png');
+    padding-bottom:50px;
+}
+#content{
+    padding-top:1px;
+    padding-bottom:50px ;
+}
+
+a .info-box{
+    text-decoration:none;
+    background:rgba(255,255,55,.8);
+    width:90%;
+    height:90px;
+    display:block;
+    margin:auto;
+    margin-top:12px;
+    padding:1px;
+}
+#info-box-full{
+    background-color:rgba(255,255,255, .8);
+    width:90%;
+    display:block;
+     margin:auto;
+     margin-top:12px;
+     padding:10px;
+}
+#info-box-full img{
+    width:100%;
+}
+#info-box-full h3{
+    text-align:center;
+}
+
+.info-box-weather-icon{
+
+height:30px;
+width: 30px;
+margin:10px;
+float:left;
+}
+h1 .info-box-weather-icon{
+    font-size:65px;
+    font-weight: 400px;
+    padding:0;
+    margin:0;
+}
+input{
+    width:100%;
+    height:25px;
+    margin:12px 0;
+    border: 1px solid #929292;
+}
+.info-box-full{
+    background-color:greenyellow;
+
+}
+textarea{
+   width: 100%; 
+   height:25px;
+   margin: 12px 0;
+   border:1px solid #929292;
+   
+}
+.button{
+  display:block;
+  background-color:forestgreen;
+  text-decoration:none;
+  text-align:center;
+  color:white;
+  font-size:16px;
+  font-weight:600;
+  margin: 12px 0;
+  padding:8px 0;
+
+}

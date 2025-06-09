@@ -1,0 +1,51 @@
+body{
+    background-color: azure;
+}
+table{
+    border:1;
+    border-color: black;
+    background-color:azure;
+}
+input{
+    height:90px;
+    text-align: right;
+    background-color: azure;
+    border:none;
+    margin-right:1px;
+    padding-right:10px;
+}
+#arithmetic{
+    background-color: azure;
+    border:none;
+}
+#arithmetic td:hover{
+    background-color:bisque;
+    color:black;
+    width:20px;
+    height:20px;
+
+}
+ .me td{
+    background-color:azure;
+    padding-left:50px;
+    width:50px;
+    margin-right:-100px;
+    height:50px;
+}
+.me td:hover{
+    background-color:aquamarine;
+    
+}
+
+#equal{
+    color:white;
+    background-color:blue;
+}
+@keyframes pulse{
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+#equal.clicked{
+    animation:pulse 0,5s ease ;
+}

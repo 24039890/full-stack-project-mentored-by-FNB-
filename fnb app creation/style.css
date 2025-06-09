@@ -1,0 +1,100 @@
+.home{
+    color:blueviolet;
+    background-color:aqua;
+    animation-name:heading; /* this nitialises  the animation*/
+    animation-duration:3s;
+    animation-timing-function:linear;
+    animation-delay:2s;
+    animation-iteration-count:3;
+    animation-direction:normal;
+
+}
+/*creation of an animation of the h1*/
+
+@keyframes heading{
+
+    0% {
+     background-color:blueviolet;
+       transform:rotate(0deg)  scale(2) skew(5deg);
+    }
+    50%{
+        background-color:pink;
+        transform: scale(0.5);
+    }
+    100%{
+     transform:  translate(50px) scale(1);
+     background-color:chartreuse;
+    }
+}
+body{
+    background-color:aqua;
+    color:black;
+}
+#img{
+    margin:3px;
+    background-image: -moz-repeating-linear-gradient(green,yellow,aqua);
+    width:150px;
+    height:150px;
+    animation-name:images;
+    animation-duration: 3s;
+    animation-timing-function: normal;
+    animation-iteration-count:1;
+    animation-direction: normal;
+    animation-play-state: running;
+    
+}
+img:hover{
+    animation-name:images;
+    animation-duration: 3s;
+    animation-timing-function: normal;
+    animation-iteration-count:1;
+    animation-direction: normal;
+    animation-play-state: running
+}
+@keyframes images{
+    0%{
+         transform: rotate(180deg) translate(3px);
+    }
+    75%{
+       transform :translate(3px) scale(0.5);
+    }
+    100%{
+      transform:rotate(3deg) scale(1);
+    }
+
+}
+
+
+.google{
+
+    background-color:greenyellow;
+}
+
+/* changing  fonts here*/
+
+h2{
+    font-family:sans-serif;
+}
+h3{
+     font-family:serif;
+}
+h3,h4,h5,h6{
+    font-family:serif;
+}
+ol{
+    
+    list-style-type:square;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul{
+    list-style-image: url('images/images/');
+    font-family:sans-serif;
+}
+a{
+     text-decoration:none;
+     background-color:aquamarine;
+}
+/* works when the mouse is moved  towards the object begn hoverd*/
+a:hover{
+    background-color:aqua;
+}

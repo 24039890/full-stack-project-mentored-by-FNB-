@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div id="top">
+        <h1 id="cal">🔢 Calculator</h1>
+    </div>
+    <div>
+        <h4 id="h">STANDARD</h4>
+    </div>
+    <div id="display">
+        <input type="text" id="result" readonly>
+    </div>
+    
+    <div class="calc">
+        <div id="special">
+            <button class="m" id="mc">MC</button>
+            <button class="m" id="mr">MR</button>
+            <button class="m" id="m-plus">M+</button>
+            <button class="m" id="m-minus">M-</button>
+            <button class="m" id="ms">MS</button>
+            <button class="m" id="m">M</button>
+        </div>
+        <div id="arith_buton">
+            <button class="cal op">%</button>
+            <button class="cal" id="ce">CE</button>
+            <button class="cal" id="c">C</button>
+            <button class="cal" id="backspace">⌫</button>
+            
+            <button class="cal op">1/x</button>
+            <button class="cal op">x²</button>
+            <button class="cal op">√x</button>
+            <button class="cal op">÷</button>
+            
+            <button class="cal num">7</button>
+            <button class="cal num">8</button>
+            <button class="cal num">9</button>
+            <button class="cal op">×</button>
+            
+            <button class="cal num">4</button>
+            <button class="cal num">5</button>
+            <button class="cal num">6</button>
+            <button class="cal op">-</button>
+            
+            <button class="cal num">1</button>
+            <button class="cal num">2</button>
+            <button class="cal num">3</button>
+            <button class="cal op">+</button>
+            
+            <button class="cal" id="plus-minus">±</button>
+            <button class="cal num">0</button>
+            <button class="cal" id="decimal">.</button>
+            <button class="cal" id="equals">=</button>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>

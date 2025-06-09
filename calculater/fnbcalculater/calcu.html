@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="top_tab">
+        <h3>casio</h3>
+    </div>
+
+    <table border="1">
+        <tr>
+            <td colspan="6">
+                <input type="text" id="result" value="0">
+            </td>
+        </tr>
+        <tr id="arithmetic">
+            <td>MC</td>
+            <td>MR</td>
+            <td>M+</td>
+            <td>M-</td>
+            <td>MS</td>
+            <td>M</td>
+        </tr>
+        <tr class="me">
+            <td>%</td>
+            <td>CE</td>
+            <td>C</td>
+            <td onclick="ACpressed()" colspan="3">⌫</td>   
+        </tr>
+        <tr class="me">
+            <td onclick="operatorPressed('')">1/x</td>
+            <td   onclick="operatorPressed('x²')">x²</td>
+            <td  onclick="operatorPressed('x')">√x</td>
+            <td onclick="operatorPressed('/')"colspan="3">÷</td>
+        </tr>
+        <tr class="me">
+            <td onclick="digitpressed(7)">7</td>
+            <td onclick="digitpressed(8)">8</td>
+            <td onclick="digitpressed(9)">9</td>
+            <td  onclick="operatorPressed('x')" colspan="3">x</td>
+        </tr>
+        <tr class="me">
+            <td onclick="digitpressed(4)">4</td>
+            <td onclick="digitpressed(5)">5</td>
+            <td onclick="digitpressed(6)">6</td>
+            <td   onclick="operatorPressed('-')"colspan="3">-</td>
+        </tr>
+        <tr class="me">
+            <td onclick="digitpressed(1)">1</td>
+            <td onclick="digitpressed(2)">2</td>
+            <td onclick="digitpressed(3)">3</td>
+            <td   onclick="operatorPressed('+')"colspan="3">+</td>
+        </tr>
+        <tr class="me">
+            <td>±</td>
+            <td onclick="digitpressed(0)">0</td>
+            <td>,</td>
+            <td onclick="equalBttonPressed()"id="equal" colspan="3">=</td>
+        </tr>
+    </table>
+    <script src="calc.js"></script>
+</body>
+</html>

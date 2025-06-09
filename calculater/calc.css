@@ -1,0 +1,47 @@
+body{
+
+    background-color:azure
+}
+
+#top{
+    margin:-20px;
+}
+#h{
+    margin-top:30px;
+}
+
+#special button{
+    border:none;
+    margin-left:-2px;
+    width:50px;
+    height:2px;
+   margin-top:75px;
+}
+#special button:hover{
+
+    background-color:grey;
+}
+
+#arith_buton button{
+margin-bottom: 1px;
+ margin-left:-1px;
+ width:80px;
+ height:80px;
+
+}
+#arith_buton button:hover{
+
+    background-color:beige;
+}
+#equal_sign{
+ background-color:blue;
+ color:whitesmoke;
+}
+input{
+  height:120px;
+  width:300px;
+  
+}
+#display{
+    margin-bottom:-60px;
+}
